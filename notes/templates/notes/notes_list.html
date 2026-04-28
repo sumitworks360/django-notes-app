@@ -1,0 +1,11 @@
+<h2>Your Notes</h2>
+
+<a href="/notes/create/">Create New Note</a>
+
+<ul>
+    {% for note in notes %}
+        <li>
+            <b>{{ note.title }}</b> - {{ note.content }}
+        </li>
+    {% endfor %}
+</ul>
